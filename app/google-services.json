@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "897268585595",
+    "firebase_url": "https://agronode-itlm.firebaseio.com",
+    "project_id": "agronode-itlm",
+    "storage_bucket": "agronode-itlm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897268585595:android:179a1096cd6556ce",
+        "android_client_info": {
+          "package_name": "com.itlm.agronode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897268585595-fbgsavnifmlchofutcclehi24s485l8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.itlm.agronode",
+            "certificate_hash": "44a0ba4a4142ec182a77a47a91a9d437b9954c2b"
+          }
+        },
+        {
+          "client_id": "897268585595-ppfkh0jalgk8655vpt635nd5ja0r934v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5AALl7RDJINMhR8RosACjT8DyaoLhWRU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897268585595-ppfkh0jalgk8655vpt635nd5ja0r934v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

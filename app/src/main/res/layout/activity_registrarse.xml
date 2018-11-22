@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrarse">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Ingrese su nombre"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                />
+            <EditText
+                android:id="@+id/registroNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:hint="Nombre"
+
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_selector"
+                android:shadowColor="#A8A8A8"
+                android:shadowRadius="5"
+                android:textColor="#000000"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Suba una foto"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                />
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_perfil"
+                android:scaleType="fitXY"
+                android:id="@+id/ib_registrar_perfil"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Ingrese su correo"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+            <EditText
+                android:id="@+id/registroemail"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_selector"
+                android:shadowColor="#A8A8A8"
+                android:shadowRadius="5"
+                android:textColor="#000000"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Ingrese su contraseña"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+            <EditText
+                android:id="@+id/registropassword"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:hint="Contraseña"
+
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_selector"
+                android:shadowColor="#A8A8A8"
+                android:shadowRadius="5"
+                android:textColor="#000000"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+
+                <com.spark.submitbutton.SubmitButton
+                    android:textSize="12dp"
+                    android:id="@+id/btnRegistrarUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Registrar Usuario"
+                    android:textColor="@color/black"
+                    app:sub_btn_background="#10FFFFFF"
+                    app:sub_btn_duration="2500"
+                    app:sub_btn_line_color="#008000"
+                    app:sub_btn_ripple_color="#008000"
+                    app:sub_btn_tick_color="#fff" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

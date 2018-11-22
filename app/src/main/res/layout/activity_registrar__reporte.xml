@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Registrar_Reporte">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:text="Seleccione la ubicación del reporte"/>
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtregistro_reporte_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="Nombre del Reporte"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_selector"
+        android:shadowColor="#A8A8A8"
+        android:shadowRadius="5"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtregistro_reporte_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="Descripción del Reporte"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:autoSizeMaxTextSize="50px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_selector"
+        android:shadowColor="#A8A8A8"
+        android:shadowRadius="5"
+        android:textColor="#000000"
+        />
+
+    <ImageButton
+        android:layout_marginVertical="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_perfil"
+        android:scaleType="fitXY"
+        android:id="@+id/ib_registrar_reporte"
+        />
+
+    <com.spark.submitbutton.SubmitButton
+        android:textSize="12dp"
+        android:id="@+id/btnRegistrarReporte"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Registrar Reporte"
+        android:textColor="@color/black"
+        app:sub_btn_background="#10FFFFFF"
+        app:sub_btn_duration="2500"
+        app:sub_btn_line_color="#008000"
+        app:sub_btn_ripple_color="#008000"
+        app:sub_btn_tick_color="#fff" />
+
+
+</LinearLayout>
